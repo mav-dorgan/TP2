@@ -1,6 +1,6 @@
-Universidad Nacional de las Artes
-Lic. en Artes Multimediales
-Informatica General 1- Drelichman TM
-Trabajo práctico n2
-2026
-Dorgan (44448957), La Rosa (95867452)
+Universidad Nacional de las Artes <br>
+Lic. en Artes Multimediales <br>
+Informatica General 1- Drelichman TM <br>
+Trabajo práctico n2 <br>
+2026 <br>
+Dorgan (44448957), La Rosa (95867452) <br>
