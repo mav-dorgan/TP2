@@ -1,0 +1,181 @@
+/*=========== PALETA DE COLORES ===========*/
+
+/*root me permite declarar variables en css para reutilizar luego.
+Esto simplifica la lectura de los colores y facilita si se quiere cambiar un color más aelante
+para recuperar el valor de una vaariable se debe utilizar var(--nombre-variable)*/
+:root {
+    --color-fondo: #E9E5DA;
+    --color-oscuro: #20231F;
+    --color-salvia: #A3A18A;
+    --color-marron: #714E43;
+    --color-tarjeta: #F3F0E8;
+}
+
+/*========== ESTILOS GENERALES ============*/
+
+* {
+    box-sizing: border-box;
+}
+
+#contenedor {
+    width: 100%;
+    max-width: 1920px;
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: var(--color-fondo);
+    color: var(--color-oscuro);
+    font-family: "DM Sans", sans-serif;
+}
+
+h1, h2, h3 {
+    font-family: "Cormorant Garamond", serif;
+    font-weight: 700;
+}
+
+section {
+    scroll-margin-top: 5rem;
+}
+
+/* ======== NAVEGACION ========= */
+
+.navbar {
+    background-color: var(--color-oscuro);
+    padding: 0.8rem 1rem;
+}
+
+.navbar-brand {
+    font-family: var(--font-titulos);
+    font-size: 1.8rem;
+    font-weight: 600;
+    letter-spacing: 0.1rem;
+    color: var(--color-fondo);
+}
+
+.navbar-toggler {
+    border-color: var(--color-salvia);
+}
+
+.navbar-toggler:focus {
+    box-shadow: 0 0 0 0.15rem var(--color-salvia);
+}
+
+.navbar-nav {
+    padding-top: 0.8rem;
+}
+
+.navbar-nav .nav-link {
+    font-family: var(--font-textos);
+    font-size: 0.95rem;
+    color: var(--color-fondo);
+    padding: 0.7rem 0;
+}
+
+.navbar-nav .nav-link:hover {
+    color: var(--color-salvia);
+}
+
+/* ========= MENU DESPLEGABLE ======== */
+
+.dropdown-menu {
+    background-color: #30352F;
+    border: 1px solid var(--color-salvia);
+    border-radius: 0.3rem;
+    padding: 0.5rem;
+}
+
+.dropdown-item {
+    color: var(--color-fondo);
+    font-family: var(--font-textos);
+    font-size: 0.9rem;
+    padding: 0.6rem 0.8rem;
+}
+
+.dropdown-item:hover {
+    background-color: var(--color-salvia);
+    color: var(--color-oscuro);
+}
+
+/*======== PORTADA ==========*/
+
+.portada {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+
+.portadaTitulo {
+    font-size: 3rem;
+    font-weight: 500;
+    letter-spacing: -0.1rem;
+    color: var(--color-oscuro);
+}
+
+.portadaTexto {
+    font-size: 0.95rem;
+    line-height: 1.8;
+}
+
+.portadaImagen {
+    width: 100%;
+    border-radius: 0.5rem;
+}
+
+/* ===== TARJETAS DEL INICIO ===== */
+
+#secciones {
+    padding-top: 2rem;
+    padding-bottom: 3rem;
+}
+
+#secciones h2 {
+    color: var(--color-oscuro);
+    font-size: 1.8rem;
+    font-weight: 500;
+}
+
+.tarjetaSade {
+    background-color: var(--color-tarjeta);
+    border: none;
+    border-radius: 0.5rem;
+    overflow: hidden;
+}
+
+.tarjetaImagen {
+    overflow: hidden;
+}
+
+.tarjetaFoto {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.tarjetaCuerpo {
+    padding: 1.2rem;
+}
+
+.tarjetaTitulo {
+    color: var(--color-oscuro);
+    font-size: 1.6rem;
+    margin-bottom: 1rem;
+}
+
+.tarjetaTexto {
+    color: #55564E;
+    font-size: 0.9rem;
+    line-height: 1.7;
+}
+
+.tarjetaEnlaces {
+    margin-top: 1.5rem;
+}
+
+.enlaceTarjeta {
+    color: var(--color-oscuro);
+    border: 1px solid var(--color-salvia);
+    border-radius: 0.25rem;
+    background-color: transparent;
+}

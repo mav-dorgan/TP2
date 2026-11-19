@@ -3,6 +3,12 @@
     <head>
         <meta charset="utf-8">
         <title>Sade Adu</title>
+
+        <!--FUENTES-->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap" rel="stylesheet">
+        
         <!-- Bootstrap CSS -->
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
         <!-- Propio CSS -->
@@ -91,91 +97,115 @@
             </nav>
         </header>
         <main>
-            <article>
-                <h1 class="text-center mb-4">Sade Adu</h1>
-                <img src="img/inicio/inicio-1.jpg" class="img-fluid d-block mx-auto my-4" alt="Sade Adu">
-                <p class="text-center m-4">Una voz inconfundible, una identidad única y una trayectoria que atraviesa generaciones. Nacida en Nigeria y criada en Inglaterra, desarrolló una identidad artística que combina distintas influencias culturales y musicales. Desde su aparición en la década de 1980, se convirtió en una de las figuras más reconocibles de la música contemporánea, manteniendo una trayectoria marcada por la elegancia, la sensibilidad y una relación reservada con la exposición pública. <br>
-                Sade construyó un universo musical propio, fusionando soul, jazz y R&B en un estilo que se mantiene vigente a lo largo del tiempo.</p>
-            </article>
+            <div class="contenedor">
+                <article class="container py-5 portada">
+                    <div class="row align-items-center g-4">
 
-            <!--TARJETAS CON NAVEGACIÓN-->
-            <section id="secciones" class="container py-5">
-                <h2 class="text-center mb-4">Explorá el universo Sade</h2>
-                <div class="row g-4"> <!--Row establece la fila y g-4 el gap-->
-                    <!-- TARJETA 1 -->
-                    <div class="col-12 col-md-4">
-                        <!--col-12 determina que cada tarjeta ocupe todo el ancho en celulares y col-md-4 define que haya tres tarjetas en pantallas medianas o grandes-->
+                        <!--Texto de introducción-->
+                        <div class="col-12 col-lg-5 text-center text-lg-start">
+                            
+                            <h1 class="display-2 mb-4 portadaTitulo">Sade Adu</h1>
 
-                        <div class="card tarjeta h-100"> 
-                            <!--h-100 hace que todas tengan la misma altura dentro de la fila-->
-                            <img src="img/inicio/inicio-2.jpg"
-                                class="card-img-top"
+                            <p class="lead" portadaTexto>
+                            Una voz inconfundible, una identidad única y una trayectoria que atraviesa generaciones. Nacida en Nigeria y criada en Inglaterra, desarrolló una identidad artística que combina distintas influencias culturales y musicales. Desde su aparición en la década de 1980, se convirtió en una de las figuras más reconocibles de la música contemporánea, manteniendo una trayectoria marcada por la elegancia, la sensibilidad y una relación reservada con la exposición pública. <br>
+                            Sade construyó un universo musical propio, fusionando soul, jazz y R&B en un estilo que se mantiene vigente a lo largo del tiempo.</p>
+                        </div>
+
+                        <!--Imagen principal-->
+                        <div class="col-12 col-lg-7">
+                            <img src="img/inicio/inicio-1.jpg" class="img-fluid rounded-4 d-block mx-auto portadaImagen" alt="Sade Adu">
+                        </div>
+                    </div>
+                </article>
+
+                <!--TARJETAS CON NAVEGACIÓN-->
+                <section id="secciones" class="container py-5">
+
+                    <h2 class="text-center mb-4">Explorá el universo Sade</h2>
+
+                    <div class="row g-4"> <!--Row establece la fila y g-4 el gap-->
+                        
+                        <!-- TARJETA 1 -->
+                        <div class="col-12 col-md-4">
+                            <!--col-12 determina que cada tarjeta ocupe todo el ancho en celulares y col-md-4 define que haya tres tarjetas en pantallas medianas o grandes-->
+
+                            <div class="card h-100 tarjetaSade"> 
+                                <!--h-100 hace que todas tengan la misma altura dentro de la fila-->
+                                <img src="img/inicio/inicio-2.jpg"
+                                class="card-img-top tarjetaImagen"
                                 alt="Retrato de Sade Adu">
 
-                            <div class="card-body">
-                                <h3 class="card-title">Trayectoria</h3>
+                                <div class="card-body d-flex flex-column tarjetaCuerpo">
 
-                                <p class="card-text">
-                                    Conocé la historia de Sade y descubrí
-                                    cómo fue construyendo su identidad artística.
-                                </p>
+                                    <h3 class="card-title tarjetaTitulo">Trayectoria</h3>
 
-                                <div>
-                                    <a href="seccion-1/index.html">Biografía</a>
-                                    <a href="seccion-1/evolucion.html">Evolución artística</a>
+                                    <p class="card-text tarjetaTexto">
+                                        Conocé la historia de Sade y descubrí
+                                        cómo fue construyendo su identidad artística.
+                                    </p>
+
+                                    <div class="mt-auto d-flex flex-column gap-2 tarjetaEnlaces">
+                                        <a href="seccion-1/index.html" class="btn btn-outline-dark enlaceTarjeta">Biografía</a>
+                                        <a href="seccion-1/evolucion.html" class="btn btn-outline-dark enlaceTarjeta">Evolución artística</a>
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                    </div>
 
-                    <!-- TARJETA 2 -->
-                    <div class="col-12 col-md-4">
-                        <div class="card tarjeta h-100">
-                            <img src="img/inicio/inicio-3.jpg"
-                                class="card-img-top"
+                        <!-- TARJETA 2 -->
+                        <div class="col-12 col-md-4">
+
+                            <div class="card h-100 tarjetaSade">
+                                <img src="img/inicio/inicio-3.jpg"
+                                class="card-img-top tarjetaImagen"
                                 alt="Portada del álbum Diamond Life">
 
-                            <div class="card-body">
-                                <h3 class="card-title">Discografía</h3>
+                                <div class="card-body d-flex flex-column tarjetaCuerpo">
 
-                                <p class="card-text">
-                                    Explorá sus álbumes y conocé la identidad
-                                    visual que acompaña su música.
-                                </p>
+                                    <h3 class="card-title tarjetaTitulo">Discografía</h3>
 
-                                <div>
-                                    <a href="seccion-2/index.html">Discografía</a>
-                                    <a href="seccion-2/identidad-visual.html">Identidad visual</a>
+                                    <p class="card-text tarjetaTexto">
+                                        Explorá sus álbumes y conocé la identidad
+                                        visual que acompaña su música.
+                                    </p>
+
+                                    <div class="mt-auto d-flex flex-column gap-2 tarjetaEnlaces">
+                                        <a href="seccion-2/index.html"  class="btn btn-outline-dark enlaceTarjeta">Discografía</a>
+                                        <a href="seccion-2/identidad-visual.html"  class="btn btn-outline-dark enlaceTarjeta">Identidad visual</a>
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                    </div>
 
-                    <!-- TARJETA 3 -->
-                    <div class="col-12 col-md-4">
-                        <div class="card tarjeta h-100">
-                            <img src="img/inicio/inicio-4.jpg"
-                                class="card-img-top"
+                        <!-- TARJETA 3 -->
+                        <div class="col-12 col-md-4">
+
+                            <div class="card h-100 tarjetaSade">
+
+                                <img src="img/inicio/inicio-4.jpg"
+                                class="card-img-top tarjetaImagen"
                                 alt="Sade durante una presentación en vivo">
 
-                            <div class="card-body">
-                                <h3 class="card-title">Giras y legado</h3>
+                                <div class="card-body d-flex flex-column tarjetaCuerpo">
 
-                                <p class="card-text">
-                                    Recorré sus presentaciones en vivo y
-                                    descubrí la huella que dejó en la música.
-                                </p>
+                                    <h3 class="card-title tarjetaTitulo">Giras y legado</h3>
 
-                                <div>
-                                    <a href="seccion-3/index.html">Giras</a>
-                                    <a href="seccion-3/legado.html">Legado</a>
+                                    <p class="card-text tarjetaTexto">
+                                        Recorré sus presentaciones en vivo y
+                                        descubrí la huella que dejó en la música.
+                                    </p>
+
+                                    <div class="mt-auto d-flex flex-column gap-2 tarjetaEnlaces">
+                                        <a href="seccion-3/index.html"  class="btn btn-outline-dark enlaceTarjeta">Giras</a>
+                                        <a href="seccion-3/legado.html"  class="btn btn-outline-dark enlaceTarjeta">Legado</a>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                </div>
 
-            </section>
+                </section>
+            </div>    
         </main>
         <footer>
         </footer>
