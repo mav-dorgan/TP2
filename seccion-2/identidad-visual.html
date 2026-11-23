@@ -133,9 +133,105 @@
 
                     <div class="row align-items-center g-4 mt-2">
 
-                        <!-- Carrusel-->
+                        <!-- Carrusel -->
                         <div class="col-12 col-md-6">
-                            
+                            <!--id="carruselSade": Identifica al carrusel.
+                                carousel: Aplica los estilos y estructura de un carrusel de Bootstrap.
+                                slide: Activa el efecto de transición entre imágenes.
+                            -->
+
+                            <div id="carruselSade" class="carousel slide">
+
+                                <!--carousel-indicators: Esta clase contiene los pequeños indicadores que aparecen debajo de las imágenes.-->
+                                <div class="carousel-indicators">
+
+                                    <!--data-bs-target="#carruselSade": indica a qué carrusel pertenece. 
+                                        data-bs-slide-to="0": indica a qué imagen debe dirigirse. La primera imagen tiene índice 0, la segunda 1 y la tercera 2.
+                                        active: señala cuál es el indicador activo inicialmente.
+                                        aria-current="true": informa que ese indicador corresponde al elemento actual.
+                                        aria-label="Imagen 1": proporciona una descripción accesible del botón.-->
+                                    <button type="button" 
+                                        data-bs-target="#carruselSade"
+                                        data-bs-slide-to="0" 
+                                        class="active"
+                                        aria-current="true" 
+                                        aria-label="Imagen 1">
+                                    </button>
+
+                                    <button type="button" 
+                                        data-bs-target="#carruselSade"
+                                        data-bs-slide-to="1" 
+                                        aria-label="Imagen 2">
+                                    </button>
+
+                                    <button type="button" 
+                                        data-bs-target="#carruselSade"
+                                        data-bs-slide-to="2" 
+                                        aria-label="Imagen 3">
+                                    </button>
+
+                                </div>
+
+                                <!--carousel-inner: agrupa todas las diapositivas del carrusel.-->
+                                <div class="carousel-inner">
+
+                                    <div class="carousel-item active">
+                                        <div class="ratio ratio-4x3">
+                                            <img src="../img/identidad-visual/identidad-visual-1.jpeg"
+                                                class="w-100 h-100 object-fit-cover"
+                                                alt="Retrato de Sade Adu">
+                                        </div>
+                                    </div>
+
+                                    <div class="carousel-item">
+                                        <div class="ratio ratio-4x3">
+                                            <img src="../img/identidad-visual/identidad-visual-2.jpeg"
+                                            class="w-100 h-100 object-fit-cover"
+                                            alt="Fotografía de Sade Adu">
+                                        </div>
+                                    </div>
+
+                                    <div class="carousel-item">
+                                        <div class="ratio ratio-4x3">
+                                            <img src="../img/identidad-visual/identidad-visual-4.jpeg"
+                                            class="w-100 h-100 object-fit-cover"
+                                            alt="Fotografía de la banda Sade">
+                                        </div>
+                                    </div>
+
+                                </div>
+
+                                <!--Botones para avanzar y retroceder-->
+
+                                <!--carousel-control-prev: posiciona el botón para retroceder. Definir el área que ocupa.
+                                    data-bs-target: conecta el botón con el carrusel.
+                                    data-bs-slide="prev": indica a la transición que debe retroceder.-->
+                                <button class="carousel-control-prev" type="button"
+                                    data-bs-target="#carruselSade" data-bs-slide="prev">
+
+                                    <!--carousel-control-prev-icon: muestra el ícono de la flecha que aparece dentro de ese botón.
+                                        visually-hidden: oculta un texto visualmente, pero lo mantiene disponible para lectores de pantalla.
+                                        aria-hidden="true": indica que ese elemento no debe ser anunciado por lectores de pantalla.-->
+                                    <span class="carousel-control-prev-icon"
+                                        aria-hidden="true"></span>
+
+                                    <span class="visually-hidden">Anterior</span>
+
+                                </button>
+
+                                <!--Funciona de manera similar que el boton para retroceder solo que este es para avanzar.-->
+                                <button class="carousel-control-next" type="button"
+                                    data-bs-target="#carruselSade" data-bs-slide="next">
+
+                                    <span class="carousel-control-next-icon"
+                                        aria-hidden="true"></span>
+
+                                    <span class="visually-hidden">Siguiente</span>
+
+                                </button>
+
+                            </div>
+
                         </div>
 
                         <!-- Texto -->
@@ -323,6 +419,10 @@
         </footer>
 
         <!-- Bootstrap JavaScript -->
-    |   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+       <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+
+        <!-- Archivo JavaScript del proyecto -->
+        <script src="../js/script.js"></script>
+
     </body>
 </html>
