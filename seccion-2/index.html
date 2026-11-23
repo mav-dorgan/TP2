@@ -2,6 +2,17 @@
 <html lang="es">
     <head>
         <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- meta viewport configura el área visible de la página en los dispositivos,
+       para poder adaptar el contenido a diferentes tamaños de pantalla.
+
+        name="viewport": indica que se está configurando el área visible de la página.
+
+        width=device-width: establece el ancho del viewport para que coincida con el ancho
+        de la pantalla del dispositivo.
+
+        initial-scale=1: establece el nivel de zoom inicial en 100%, es decir, sin ampliación
+        ni reducción al cargar la página. -->
         <title>Discografía</title>
         <!-- Bootstrap CSS -->
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
@@ -97,9 +108,262 @@
                 </div>
             </nav>
         </header>
+
         <main>
 
+            <!-- container: centra el contenido y establece un ancho máximo
+                que se adapta al tamaño de pantalla.
+                py-5: agrega espacio interno arriba y abajo. -->
+            <div class="container py-5">
+
+                <!-- INTRODUCCIÓN -->
+
+                <!-- text-center: centra el texto.
+                    mb-5: agrega un margen inferior para separar la introducción
+                    de la galería. -->
+                <section class="text-center mb-5">
+
+                    <h1>Discografía</h1>
+
+                    <p>
+                        A lo largo de su trayectoria, Sade construyó una identidad
+                        musical propia que combina influencias del soul, jazz, R&B
+                        y pop. Desde su debut en 1984 hasta su último álbum de
+                        estudio en 2010, el grupo publicó seis producciones que
+                        reflejan distintas etapas de su evolución artística,
+                        manteniendo siempre una sonoridad reconocible y una
+                        particular sensibilidad musical.
+                    </p>
+
+                </section>
+
+
+                <!-- GALERÍA DE ÁLBUMES -->
+
+                <!-- row: crea una fila para organizar las columnas.
+                    g-3: establece un espacio entre las imágenes. -->
+                <section class="row g-3 mb-5" aria-label="Galería de álbumes">
+
+
+                    <!-- col-12: ocupa todo el ancho en celulares (1 imagen por fila).
+                        col-md-6: ocupa la mitad del ancho en pantallas medianas (2 por fila).
+                        col-lg-4: ocupa un tercio del ancho en pantallas grandes (3 por fila). -->
+                    <div class="col-12 col-md-6 col-lg-4">
+
+                        <!-- ratio ratio-1x1: establece un espacio cuadrado.
+                            object-fit-cover: hace que la imagen cubra el espacio
+                            sin deformarse, recortando lo necesario. -->
+                        <button type="button"
+                            class="btn p-0 w-100"
+                            data-bs-toggle="tooltip"
+                            data-bs-placement="top"
+                            title="Diamond Life (1984) - Álbum debut de Sade.">
+
+                            <div class="ratio ratio-1x1">
+                                <img src="../img/discografia/discografia-1.png"
+                                    class="object-fit-cover"
+                                    alt="Portada de Diamond Life">
+                            </div>
+
+                        </button>
+
+                    </div>
+
+
+                    <div class="col-12 col-md-6 col-lg-4">
+                        <!--data-bs-toggle="tooltip" indica que el botón tendrá un tooltip que se activa con js.
+                            data-bs-placement="top" indica que aparecerá arriba.
+                            title="Diamond Life (1984)" contiene el texto que aparecerá.-->
+                        <button type="button"
+                            class="btn p-0 w-100"
+                            data-bs-toggle="tooltip" 
+                            data-bs-placement="top"
+                            title="Promise (1985) - Una producción que consolidó el sonido del grupo.">
+
+                            <div class="ratio ratio-1x1">
+                                <img src="../img/discografia/discografia-2.png"
+                                    class="object-fit-cover"
+                                    alt="Portada de Promise">
+                            </div>
+
+                        </button>
+
+                    </div>
+
+
+                    <div class="col-12 col-md-6 col-lg-4">
+
+                        <button type="button"
+                            class="btn p-0 w-100"
+                            data-bs-toggle="tooltip"
+                            data-bs-placement="top"
+                            title="Stronger Than Pride (1988) - Un álbum de sonido sutil y atmosférico.">
+
+                            <div class="ratio ratio-1x1">
+                                <img src="../img/discografia/discografia-3.png"
+                                    class="object-fit-cover"
+                                    alt="Portada de Stronger Than Pride">
+                            </div>
+
+                        </button>
+
+                    </div>
+
+
+                    <div class="col-12 col-md-6 col-lg-4">
+
+                        <button type="button"
+                            class="btn p-0 w-100"
+                            data-bs-toggle="tooltip"
+                            data-bs-placement="top"
+                            title="Love Deluxe (1992) - Una producción introspectiva y envolvente.">
+
+                            <div class="ratio ratio-1x1">
+                                <img src="../img/discografia/discografia-4.png"
+                                    class="object-fit-cover"
+                                    alt="Portada de Love Deluxe">
+                            </div>
+
+                        </button>
+
+                    </div>
+
+
+                    <div class="col-12 col-md-6 col-lg-4">
+
+                        <button type="button"
+                            class="btn p-0 w-100"
+                            data-bs-toggle="tooltip"
+                            data-bs-placement="top"
+                            title="Lovers Rock (2000) - Un regreso con una sonoridad cálida y cercana al reggae.">
+
+                            <div class="ratio ratio-1x1">
+                                <img src="../img/discografia/discografia-5.png"
+                                    class="object-fit-cover"
+                                    alt="Portada de Lovers Rock">
+                            </div>
+
+                        </button>
+
+                    </div>
+
+
+                    <div class="col-12 col-md-6 col-lg-4">
+
+                        <button type="button"
+                            class="btn p-0 w-100"
+                            data-bs-toggle="tooltip"
+                            data-bs-placement="top"
+                            title="Soldier of Love (2010) - Su sexto álbum de estudio.">
+
+                            <div class="ratio ratio-1x1">
+                                <img src="../img/discografia/discografia-6.png"
+                                    class="object-fit-cover"
+                                    alt="Portada de Soldier of Love">
+                            </div>
+
+                        </button>
+
+                    </div>
+
+                </section>
+
+
+                <!-- CANCIONES DESTACADAS -->
+
+                <!-- mb-5: agrega espacio inferior para separar esta sección
+                    de la siguiente. -->
+                <section class="mb-5">
+
+                    <h2>Canciones destacadas por álbum</h2>
+
+                    <!-- row: organiza los contenidos en columnas.
+                        g-4: establece separación entre columnas y filas. -->
+                    <div class="row g-4 mt-2">
+
+                        <!-- col-12: ocupa todo el ancho en pantallas pequeñas.
+                            col-md-6: ocupa la mitad del ancho desde pantallas medianas. -->
+                        <div class="col-12 col-md-6">
+
+                            <h3>Diamond Life (1984)</h3>
+                            <ul>
+                                <li>Smooth Operator</li>
+                                <li>Your Love Is King</li>
+                                <li>Hang on to Your Love</li>
+                            </ul>
+
+                            <h3>Promise (1985)</h3>
+                            <ul>
+                                <li>The Sweetest Taboo</li>
+                                <li>Is It a Crime</li>
+                                <li>Never as Good as the First Time</li>
+                            </ul>
+
+                            <h3>Stronger Than Pride (1988)</h3>
+                            <ul>
+                                <li>Paradise</li>
+                                <li>Love Is Stronger Than Pride</li>
+                                <li>Nothing Can Come Between Us</li>
+                            </ul>
+
+                        </div>
+
+
+                        <div class="col-12 col-md-6">
+
+                            <h3>Love Deluxe (1992)</h3>
+                            <ul>
+                                <li>No Ordinary Love</li>
+                                <li>Kiss of Life</li>
+                                <li>Cherish the Day</li>
+                            </ul>
+
+                            <h3>Lovers Rock (2000)</h3>
+                            <ul>
+                                <li>By Your Side</li>
+                                <li>King of Sorrow</li>
+                                <li>Lovers Rock</li>
+                            </ul>
+
+                            <h3>Soldier of Love (2010)</h3>
+                            <ul>
+                                <li>Soldier of Love</li>
+                                <li>The Moon and the Sky</li>
+                                <li>Babyfather</li>
+                            </ul>
+
+                        </div>
+
+                    </div>
+
+                </section>
+
+
+                <!-- CIERRE -->
+
+                <!-- mt-5: agrega margen superior para separar el cierre
+                    de la sección anterior. -->
+                <section class="mt-5">
+
+                    <h2>A través del tiempo</h2>
+
+                    <p>
+                        Desde <em>Diamond Life</em> hasta <em>Soldier of Love</em>,
+                        Sade desarrolló una trayectoria marcada por la exploración
+                        musical y la búsqueda de una identidad propia. Sus seis
+                        álbumes reflejan distintas etapas creativas que, a pesar
+                        de sus diferencias, conservan una esencia reconocible.
+                        En 2020, estas producciones fueron reunidas en
+                        <em>This Far</em>, una colección que celebra el recorrido
+                        musical del grupo.
+                    </p>
+
+                </section>
+
+            </div>
+
         </main>
+
         <footer>
 
         </footer>
