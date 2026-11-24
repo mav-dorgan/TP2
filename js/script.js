@@ -14,3 +14,6 @@ if (carruselSade) {
     // Inicia el cambio automático de las imágenes.
     miCarrusel.cycle();
 }
+
+
+
