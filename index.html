@@ -110,10 +110,12 @@
         </header>
         <main>
             <div class="container paginaContenedor">
+
+                <!--TEXTO DE INTRODUCCIÓN-->
+
                 <article class="container py-5 portada">
                     <div class="row align-items-center g-4">
 
-                        <!--Texto de introducción-->
                         <div class="text-center encabezadoPagina">
                             
                             <h1 class="display-2 mb-4 portadaTitulo">Sade Adu</h1>
@@ -130,7 +132,55 @@
 
                 <hr>
 
+                <!-- LINEA DE TIEMPO -->
+             
+                <section id="lineaTiempo">
+
+                    <!-- encabezado -->
+                    <div class="text-center encabezadoPagina">
+                        <h2 class="tituloPagina">A través del tiempo</h2>
+                        <p class="textoIntroduccion">
+                            Un recorrido por los momentos más importantes de la trayectoria de Sade.
+                        </p>
+                    </div>
+
+                    <!-- fechas/acontecimientos -->
+                    <div id="contenedorLineaTiempo">
+                        <div id="eventosLineaTiempo">
+                            <!-- JavaScript generará los acontecimientos acá -->
+                        </div>
+                    </div>
+
+                </section>
+
+                <!-- Modal/ventana emergente -->
+                <div id="ventanaAcontecimiento">
+
+                    <div class="contenidoModal">
+
+                        <button id="cerrarModal" type="button" aria-label="Cerrar">
+                            &times;
+                        </button>
+
+                        <!--Los siguientes datos seran modificados en javascript-->
+                        <p id="categoriaAcontecimiento"></p>
+
+                        <img id="imagenAcontecimiento" src="" alt="">
+
+                        <h3 id="tituloAcontecimiento"></h3>
+
+                        <p id="fechaAcontecimiento"></p>
+
+                        <p id="descripcionAcontecimiento"></p>
+
+                    </div>
+
+                </div>
+
+                <hr>
+
                 <!--TARJETAS CON NAVEGACIÓN-->
+
                 <section id="secciones" class="container py-5">
 
                     <h2 class="text-center mb-4">Explorá el universo Sade</h2>
@@ -233,5 +283,7 @@
 
         <!-- Bootstrap JavaScript -->
        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+        <!--Script propio para la linea de tiempo-->
+        <script src="js/linea-tiempo.js"></script>
     </body>
 </html>

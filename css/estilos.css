@@ -276,6 +276,114 @@ section {
     margin-bottom: 0;
 }
 
+/*======================================
+             LINEA DE TIEMPO
+=========================================*/
+
+#contenedorLineaTiempo {
+    overflow-x: auto;
+    padding: 2rem 0;
+}
+
+#eventosLineaTiempo {
+    display: flex;
+    align-items: center;
+    min-width: max-content;
+}
+
+/* Ventana emergente */
+
+#modalAcontecimiento {
+    display: none;
+    position: fixed;
+    z-index: 1050;
+    inset: 0;
+    background-color: rgba(32, 35, 31, 0.8);
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+}
+
+.contenidoModal {
+    position: relative;
+    background-color: var(--color-tarjeta);
+    width: 100%;
+    max-width: 35rem;
+    padding: 2rem;
+    border-radius: 0.5rem;
+    max-height: 90vh;
+    overflow-y: auto;
+}
+
+#cerrarModal {
+    position: absolute;
+    top: 0.5rem;
+    right: 0.8rem;
+    border: none;
+    background: none;
+    font-size: 2rem;
+    color: var(--color-oscuro);
+    cursor: pointer;
+}
+
+/* Línea horizontal */
+
+#eventosLineaTiempo {
+    display: flex;
+    align-items: center;
+    min-width: max-content;
+    position: relative;
+}
+
+#eventosLineaTiempo::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 50%;
+    height: 2px;
+    background-color: var(--color-salvia);
+}
+
+/* Cada acontecimiento */
+
+.eventoLineaTiempo {
+    position: relative;
+    width: 12rem;
+    text-align: center;
+    padding: 1rem;
+}
+
+/* Botón del acontecimiento */
+
+.botonAcontecimiento {
+    position: relative;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.4rem;
+    border: none;
+    background-color: var(--color-fondo);
+    color: var(--color-oscuro);
+    cursor: pointer;
+}
+
+.fechaEvento {
+    font-family: "Cormorant Garamond", serif;
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: var(--color-marron);
+}
+
+.nombreEvento {
+    font-family: "DM Sans", sans-serif;
+    font-size: 0.85rem;
+}
+
+.botonAcontecimiento:hover .fechaEvento {
+    color: var(--color-salvia);
+}
 
 /*==================================================
                 GALERIA DE ALBUMES
