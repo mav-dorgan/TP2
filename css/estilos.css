@@ -281,22 +281,22 @@ section {
 =========================================*/
 
 #contenedorLineaTiempo {
-    overflow-x: auto;
+    overflow-x: auto; /*permite que cuando el contenido se desborda horizontalmente aparezca una barra de desplazamiento horizontal*/
     padding: 2rem 0;
 }
 
 #eventosLineaTiempo {
     display: flex;
     align-items: center;
-    min-width: max-content;
+    min-width: max-content; /*hace que el contenedor tenga el ancho necesario para que entren todos los acontecimientos en una misma línea, en lugar de comprimirlos para que entren en la pantalla.*/
 }
 
 /* Ventana emergente */
 
-#modalAcontecimiento {
+#ventanaAcontecimiento {
     display: none;
     position: fixed;
-    z-index: 1050;
+    z-index: 1050; /*permite que la ventana se abra por encima del resto de los elementos de la pagina*/
     inset: 0;
     background-color: rgba(32, 35, 31, 0.8);
     justify-content: center;

@@ -44,6 +44,16 @@ function generarLineaTiempo() {
                 <span class="nombreEvento">${acontecimiento.titulo}</span>
             </button>`;
 
+
+
+        //Capturo el boton recien creado
+        const boton = evento.querySelector ('.botonAcontecimiento');
+        
+        //al hacerle click ejecuto una funcion que abre la ventana emergente y la completa con la informacion correspondiente
+        boton.addEventListener ('click', function () {
+            abrirVentana(acontecimiento);
+        })
+
         //appendChild inserta el elemento dentro del elemento que ya tenemos en HTML, en este caso, inserta cada div dentro de #eventosLineaTiempo
         eventosLineaTiempo.appendChild(evento);
 
@@ -52,3 +62,45 @@ function generarLineaTiempo() {
 
 generarLineaTiempo ();
 
+// ========== VENTANA EMERGENTE ================
+
+//Capturo los elementos del HTML donde se creara la ventana con informacion
+
+const ventanaAcontecimiento = document.querySelector("#ventanaAcontecimiento");
+const categoriaAcontecimiento = document.querySelector("#categoriaAcontecimiento");
+const imagenAcontecimiento = document.querySelector("#imagenAcontecimiento");
+const tituloAcontecimiento = document.querySelector("#tituloAcontecimiento");
+const fechaAcontecimiento = document.querySelector("#fechaAcontecimiento");
+const descripcionAcontecimiento = document.querySelector("#descripcionAcontecimiento");
+
+//Creo una funcion que me muestre la información del acontecimiento seleccionado
+
+function abrirVentana (acontecimiento) {
+    categoriaAcontecimiento.innerText = acontecimiento.categoria; //categoria (album/gira/reconocimiento)
+    imagenAcontecimiento.src = acontecimiento.imagen; //src de la imagen
+    imagenAcontecimiento.alt = acontecimiento.titulo; //texto alternativo de la imagen
+    tituloAcontecimiento.textContent = acontecimiento.titulo; //titulo del evento
+    fechaAcontecimiento.textContent = acontecimiento.fecha; //fecha del evento
+    descripcionAcontecimiento.textContent = acontecimiento.descripcion; //descripcion del evento
+
+    //se modifica el display de la ventana emergente que originalmente se encontraba como 'display: none;' en el CSS
+    ventanaAcontecimiento.style.display = "flex";
+}
+
+// ======= CERRAR LA VENTANA =============
+
+//Selecciono el boton para cerrar la ventana
+const cerrarModal = document.querySelector ('#cerrarModal');
+
+//"cierro" (escondo) la ventana al hacer click en la cruz
+cerrarModal.addEventListener ('click', function() {
+    ventanaAcontecimiento.style.display = 'none';
+});
+
+//lo mismo sucede al hacer click fuera de la tarjeta
+ventanaAcontecimiento.addEventListener('click', function(evento) {
+
+    if (evento.target === ventanaAcontecimiento) {
+        ventanaAcontecimiento.style.display = 'none';
+    }
+});
