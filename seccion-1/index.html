@@ -13,7 +13,14 @@
 
         initial-scale=1: establece el nivel de zoom inicial en 100%, es decir, sin ampliación
         ni reducción al cargar la página. -->
+
         <title>Sade Adu: biografía</title>
+
+        <!--FUENTES-->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap" rel="stylesheet">
+        
         <!-- Bootstrap CSS -->
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
         <!-- Propio CSS -->
@@ -109,39 +116,89 @@
             </nav>
         </header>
         <main>
-            <h1 class="text-center mb-4">Sade Adu</h1>
-            <h2 class="text-center mb-4">Sus orígenes</h2>
-            <img src="../img/biografia/biografia-1.jpg" class="img-fluid d-block mx-auto my-4" alt="Retrato de Sade">
-            <section>
-                <h3>Una vida entre dos culturas</h3>
-                
-                <p>Sade nació el 16 de enero de 1959 en Ibadan, Nigeria. Su padre, Adebisi Adu, era profesor de economía, mientras que su madre, Anne Hayes, era una enfermera inglesa. Cuando tenía cuatro años, sus padres se separaron y se trasladó junto a su madre y su hermano mayor a Inglaterra, donde creció en las cercanías de Colchester, en el condado de Essex. </p>
+            <div class="container paginaContenedor">
 
-                <p>Durante su adolescencia desarrolló un profundo interés por la música soul estadounidense, influenciada por artistas como Curtis Mayfield, Donny Hathaway y Bill Withers. Sin embargo, su primera orientación profesional no estuvo relacionada con la música: se trasladó a Londres para estudiar diseño de moda en St Martin's School of Art. Durante ese período también trabajó ocasionalmente como modelo.</p>
-            </section>
-            <section>
-                <h3>El comienzo de su carrera musical</h3>
-                <img src="../img/biografia/biografia-2.jpg" alt="Sade y su banda">
-                <p>Su acercamiento profesional a la música ocurrió de manera gradual. Un grupo de antiguos compañeros le propuso participar como vocalista en una banda que necesitaba una cantante. Posteriormente se incorporó a Pride, un grupo londinense de funk latino con el que comenzó a presentarse en distintos escenarios del Reino Unido.</p>
+                <div class="encabezadoPagina text-center">
+                    <h1 class="tituloPagina">Sade Adu</h1>
+                    <h2 class="subtituloPagina">Sus orígenes</h2>
+                </div>
 
-                <p>Durante sus actuaciones con Pride, Sade empezó a destacarse por sus interpretaciones de jazz y por su presencia escénica. Una de las canciones que interpretaba junto a un pequeño grupo de músicos era Smooth Operator, composición que despertó el interés de representantes de distintas discográficas.</p>
+                <img src="../img/biografia/biografia-1.jpg" class="img-fluid d-block mx-auto imagenPrincipal" alt="Retrato de Sade">
 
-                <p>En 1983, después de un período de negociaciones, firmó un contrato con Epic Records bajo una condición fundamental: continuar trabajando junto a tres de sus compañeros de Pride, Stuart Matthewman, Andrew Hale y Paul Spencer Denman. Así nació la formación musical conocida como Sade, que tomó el nombre artístico de su cantante principal.</p>
-            </section>
-            <section>
-                <h3>Reconocimiento internacional</h3>
-                <img src="../img/biografia/biografia-3.jpg" alt="Sade y su banda">
-                <p>En 1984, la banda publicó su primer álbum de estudio, Diamond Life, que rápidamente obtuvo reconocimiento internacional. El disco incluyó canciones como Your Love Is King, Smooth Operator y Hang On to Your Love, que contribuyeron a establecer su identidad musical y a posicionarla dentro de la escena internacional.</p>
-                <p>Durante los años siguientes publicaron Promise (1985) y Stronger Than Pride (1988), consolidando su popularidad con una propuesta que combinaba elementos del jazz, el soul y el pop contemporáneo.</p>
-                <p>La década de 1990 estuvo marcada por el lanzamiento de Love Deluxe (1992), un álbum que profundizó el carácter atmosférico e introspectivo de su música. Sin embargo, después de esta etapa, la banda atravesó un período de menor actividad discográfica.</p>
-                <p>Después de varios años sin publicar material de estudio, Sade regresó en 2000 con Lovers Rock, un álbum que presentó una sonoridad más íntima y que obtuvo una importante recepción internacional. Diez años más tarde, en 2010, publicó Soldier of Love, su sexto álbum de estudio.</p>
-            </section>
-            <article>
-                <h3>Una trayectoria a su propio ritmo</h3>
-                <img src="../img/biografia/biografia-4.jpg" alt="Retrato de Sade">
-                <p>A diferencia de otros artistas de su generación, Sade mantuvo una relación distante con la exposición mediática y desarrolló su carrera sin seguir un ritmo constante de lanzamientos. La cantante ha expresado en distintas oportunidades que prefiere publicar música cuando siente que tiene algo significativo para comunicar.</p>
-                <p>Su trayectoria demuestra que es posible sostener una identidad artística reconocible sin depender de la presencia permanente en los medios. A lo largo de más de cuatro décadas, Sade construyó una obra que continúa conectando con distintas generaciones de oyentes.</p>
-            </article>
+                <section class="bloqueTexto">
+                    <h3>Una vida entre dos culturas</h3>
+                    
+                    <p>Sade nació el 16 de enero de 1959 en Ibadan, Nigeria. Su padre, Adebisi Adu, era profesor de economía, mientras que su madre, Anne Hayes, era una enfermera inglesa. Cuando tenía cuatro años, sus padres se separaron y se trasladó junto a su madre y su hermano mayor a Inglaterra, donde creció en las cercanías de Colchester, en el condado de Essex. </p>
+
+                    <p>Durante su adolescencia desarrolló un profundo interés por la música soul estadounidense, influenciada por artistas como Curtis Mayfield, Donny Hathaway y Bill Withers. Sin embargo, su primera orientación profesional no estuvo relacionada con la música: se trasladó a Londres para estudiar diseño de moda en St Martin's School of Art. Durante ese período también trabajó ocasionalmente como modelo.</p>
+                </section>
+
+                <hr>
+
+                <section class="bloqueTexto">
+                    <h3>El comienzo de su carrera musical</h3>
+
+                    <div class="row align-items-center g-4">
+
+                        <div class="col-12 col-md-5">
+                            <div class="ratio ratio-4x3">
+                                <img src="../img/biografia/biografia-2.jpg" class="w-100 h-100 object-fit-cover imagenApartado" alt="Sade y su banda">
+                            </div>
+                        </div>
+
+                        <div class="col-12 col-md-7">
+                            <p>Su acercamiento profesional a la música ocurrió de manera gradual. Un grupo de antiguos compañeros le propuso participar como vocalista en una banda que necesitaba una cantante. Posteriormente se incorporó a Pride, un grupo londinense de funk latino con el que comenzó a presentarse en distintos escenarios del Reino Unido.</p>
+
+                            <p>Durante sus actuaciones con Pride, Sade empezó a destacarse por sus interpretaciones de jazz y por su presencia escénica. Una de las canciones que interpretaba junto a un pequeño grupo de músicos era Smooth Operator, composición que despertó el interés de representantes de distintas discográficas.</p>
+
+                            <p>En 1983, después de un período de negociaciones, firmó un contrato con Epic Records bajo una condición fundamental: continuar trabajando junto a tres de sus compañeros de Pride, Stuart Matthewman, Andrew Hale y Paul Spencer Denman. Así nació la formación musical conocida como Sade, que tomó el nombre artístico de su cantante principal.</p>
+                        </div>
+                </section>
+
+                <hr>
+
+                <section class="bloqueTexto">
+
+                    <h3>Reconocimiento internacional</h3>
+                    
+                    <div class="row align-items-center g-4">
+
+                        <div class="col-12 col-md-7">
+                            <p>En 1984, la banda publicó su primer álbum de estudio, Diamond Life, que rápidamente obtuvo reconocimiento internacional. El disco incluyó canciones como Your Love Is King, Smooth Operator y Hang On to Your Love, que contribuyeron a establecer su identidad musical y a posicionarla dentro de la escena internacional.</p>
+
+                            <p>Durante los años siguientes publicaron Promise (1985) y Stronger Than Pride (1988), consolidando su popularidad con una propuesta que combinaba elementos del jazz, el soul y el pop contemporáneo.</p>
+
+                            <p>La década de 1990 estuvo marcada por el lanzamiento de Love Deluxe (1992), un álbum que profundizó el carácter atmosférico e introspectivo de su música. Sin embargo, después de esta etapa, la banda atravesó un período de menor actividad discográfica.</p>
+
+                            <p>Después de varios años sin publicar material de estudio, Sade regresó en 2000 con Lovers Rock, un álbum que presentó una sonoridad más íntima y que obtuvo una importante recepción internacional. Diez años más tarde, en 2010, publicó Soldier of Love, su sexto álbum de estudio.</p>
+                        </div>
+
+                        <div class="col-12 col-md-5">
+                            <div class="ratio ratio-4x3">
+                                <img src="../img/biografia/biografia-3.jpg" class="w-100 h-100 object-fit-cover imagenApartado" alt="Sade y su banda">
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <hr>
+
+                <article class="bloqueTexto">
+                    <h3>Una trayectoria a su propio ritmo</h3>
+
+                    <div class="row align-items-center g-4">
+                        <div class="col-12 col-md-5">
+                            <div class="ratio ratio-4x3">
+                                <img src="../img/biografia/biografia-4.jpg" class="w-100 h-100 object-fit-cover imagenApartado" alt="Retrato de Sade">
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-7">
+                            <p>A diferencia de otros artistas de su generación, Sade mantuvo una relación distante con la exposición mediática y desarrolló su carrera sin seguir un ritmo constante de lanzamientos. La cantante ha expresado en distintas oportunidades que prefiere publicar música cuando siente que tiene algo significativo para comunicar.</p>
+                            <p>Su trayectoria demuestra que es posible sostener una identidad artística reconocible sin depender de la presencia permanente en los medios. A lo largo de más de cuatro décadas, Sade construyó una obra que continúa conectando con distintas generaciones de oyentes.</p>
+                        </div>
+                    </div>
+                </article>
+            </div>
         </main>
         
         <footer class="bg-dark text-white text-center py-4">

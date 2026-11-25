@@ -13,7 +13,14 @@
 
         initial-scale=1: establece el nivel de zoom inicial en 100%, es decir, sin ampliación
         ni reducción al cargar la página. -->
+
         <title>Discografía</title>
+
+        <!--FUENTES-->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap" rel="stylesheet">
+        
         <!-- Bootstrap CSS -->
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
         <!-- Propio CSS -->
@@ -112,20 +119,19 @@
         <main>
 
             <!-- container: centra el contenido y establece un ancho máximo
-                que se adapta al tamaño de pantalla.
-                py-5: agrega espacio interno arriba y abajo. -->
-            <div class="container py-5">
+                que se adapta al tamaño de pantalla.-->
+            <div class="container paginaContenedor">
 
                 <!-- INTRODUCCIÓN -->
 
                 <!-- text-center: centra el texto.
                     mb-5: agrega un margen inferior para separar la introducción
                     de la galería. -->
-                <section class="text-center mb-5">
+                <section class="text-center encabezadoPagina">
 
-                    <h1>Álbumes</h1>
+                    <h1 class="tituloPagina">Álbumes</h1>
 
-                    <p>
+                    <p class="textoIntroduccion">
                         A lo largo de su trayectoria, Sade construyó una identidad
                         musical propia que combina influencias del soul, jazz, R&B
                         y pop. Desde su debut en 1984 hasta su último álbum de
@@ -154,7 +160,7 @@
                             object-fit-cover: hace que la imagen cubra el espacio
                             sin deformarse, recortando lo necesario. -->
                         <button type="button"
-                            class="btn p-0 w-100"
+                            class="btn p-0 w-100 portadaAlbum"
                             data-bs-toggle="tooltip"
                             data-bs-placement="top"
                             title="Diamond Life (1984) - Álbum debut de Sade.">
@@ -175,7 +181,7 @@
                             data-bs-placement="top" indica que aparecerá arriba.
                             title="Diamond Life (1984)" contiene el texto que aparecerá.-->
                         <button type="button"
-                            class="btn p-0 w-100"
+                            class="btn p-0 w-100 portadaAlbum"
                             data-bs-toggle="tooltip" 
                             data-bs-placement="top"
                             title="Promise (1985) - Una producción que consolidó el sonido del grupo.">
@@ -194,7 +200,7 @@
                     <div class="col-12 col-md-6 col-lg-4">
 
                         <button type="button"
-                            class="btn p-0 w-100"
+                            class="btn p-0 w-100 portadaAlbum"
                             data-bs-toggle="tooltip"
                             data-bs-placement="top"
                             title="Stronger Than Pride (1988) - Un álbum de sonido sutil y atmosférico.">
@@ -213,7 +219,7 @@
                     <div class="col-12 col-md-6 col-lg-4">
 
                         <button type="button"
-                            class="btn p-0 w-100"
+                            class="btn p-0 w-100 portadaAlbum"
                             data-bs-toggle="tooltip"
                             data-bs-placement="top"
                             title="Love Deluxe (1992) - Una producción introspectiva y envolvente.">
@@ -232,7 +238,7 @@
                     <div class="col-12 col-md-6 col-lg-4">
 
                         <button type="button"
-                            class="btn p-0 w-100"
+                            class="btn p-0 w-100 portadaAlbum"
                             data-bs-toggle="tooltip"
                             data-bs-placement="top"
                             title="Lovers Rock (2000) - Un regreso con una sonoridad cálida y cercana al reggae.">
@@ -251,7 +257,7 @@
                     <div class="col-12 col-md-6 col-lg-4">
 
                         <button type="button"
-                            class="btn p-0 w-100"
+                            class="btn p-0 w-100 portadaAlbum"
                             data-bs-toggle="tooltip"
                             data-bs-placement="top"
                             title="Soldier of Love (2010) - Su sexto álbum de estudio.">
@@ -274,7 +280,7 @@
                     de la siguiente. -->
                 <section class="mb-5">
 
-                    <h2>Canciones destacadas por álbum</h2>
+                    <h2 class="tituloSeccion">Canciones destacadas por álbum</h2>
 
                     <div class="row g-4 mt-2">
 
@@ -282,53 +288,61 @@
                             col-md-6: ocupa la mitad del ancho desde pantallas medianas. -->
                         <div class="col-12 col-md-6">
 
-                            <h3>Diamond Life (1984)</h3>
-                            <ul>
-                                <li>Smooth Operator</li>
-                                <li>Your Love Is King</li>
-                                <li>Hang on to Your Love</li>
-                            </ul>
-
-                            <h3>Promise (1985)</h3>
-                            <ul>
-                                <li>The Sweetest Taboo</li>
-                                <li>Is It a Crime</li>
-                                <li>Never as Good as the First Time</li>
-                            </ul>
-
-                            <h3>Stronger Than Pride (1988)</h3>
-                            <ul>
-                                <li>Paradise</li>
-                                <li>Love Is Stronger Than Pride</li>
-                                <li>Nothing Can Come Between Us</li>
-                            </ul>
-
+                            <div class="bloqueTexto">
+                                <h3>Diamond Life (1984)</h3>
+                                <ul>
+                                    <li>Smooth Operator</li>
+                                    <li>Your Love Is King</li>
+                                    <li>Hang on to Your Love</li>
+                                </ul>
+                            </div>
+                            <div class="bloqueTexto">
+                                <h3>Promise (1985)</h3>
+                                <ul>
+                                    <li>The Sweetest Taboo</li>
+                                    <li>Is It a Crime</li>
+                                    <li>Never as Good as the First Time</li>
+                                </ul>
+                            </div>
+                            <div class="bloqueTexto">
+                                <h3>Stronger Than Pride (1988)</h3>
+                                <ul>
+                                    <li>Paradise</li>
+                                    <li>Love Is Stronger Than Pride</li>
+                                    <li>Nothing Can Come Between Us</li>
+                                </ul>
+                            </div>
                         </div>
 
 
                         <div class="col-12 col-md-6">
 
-                            <h3>Love Deluxe (1992)</h3>
-                            <ul>
-                                <li>No Ordinary Love</li>
-                                <li>Kiss of Life</li>
-                                <li>Cherish the Day</li>
-                            </ul>
+                            <div class="bloqueTexto">
+                                <h3>Love Deluxe (1992)</h3>
+                                <ul>
+                                    <li>No Ordinary Love</li>
+                                    <li>Kiss of Life</li>
+                                    <li>Cherish the Day</li>
+                                </ul>
+                            </div>
 
-                            <h3>Lovers Rock (2000)</h3>
-                            <ul>
-                                <li>By Your Side</li>
-                                <li>King of Sorrow</li>
-                                <li>Lovers Rock</li>
-                            </ul>
+                            <div class="bloqueTexto">
+                                <h3>Lovers Rock (2000)</h3>
+                                <ul>
+                                    <li>By Your Side</li>
+                                    <li>King of Sorrow</li>
+                                    <li>Lovers Rock</li>
+                                </ul>
+                            </div>
 
-                            <h3>Soldier of Love (2010)</h3>
-                            <ul>
-                                <li>Soldier of Love</li>
-                                <li>The Moon and the Sky</li>
-                                <li>Babyfather</li>
-                            </ul>
-
+                            <div class="bloqueTexto">
+                                <h3>Soldier of Love (2010)</h3>
+                                <ul>
+                                    <li>Soldier of Love</li>
+                                    <li>The Moon and the Sky</li>
+                                    <li>Babyfather</li>
+                                </ul>
+                            </div>
                         </div>
 
                     </div>
@@ -340,9 +354,9 @@
 
                 <!-- mt-5: agrega margen superior para separar el cierre
                     de la sección anterior. -->
-                <section class="mt-5">
+                <section class="mt-5 bloqueTexto">
 
-                    <h2>A través del tiempo</h2>
+                    <h2 class="text-center tituloSeccion">A través del tiempo</h2>
 
                     <p>
                         Desde <em>Diamond Life</em> hasta <em>Soldier of Love</em>,
@@ -373,6 +387,6 @@
         </footer>
 
         <!-- Bootstrap JavaScript -->
-    |   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+       <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
     </body>
 </html>

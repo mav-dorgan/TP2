@@ -1,8 +1,8 @@
-/*=========== PALETA DE COLORES ===========*/
 
-/*root me permite declarar variables en css para reutilizar luego.
-Esto simplifica la lectura de los colores y facilita si se quiere cambiar un color más aelante
-para recuperar el valor de una vaariable se debe utilizar var(--nombre-variable)*/
+/*==================================================
+            VARIABLES Y PALETA DE COLORES
+==================================================*/
+
 :root {
     --color-fondo: #E9E5DA;
     --color-oscuro: #20231F;
@@ -11,18 +11,13 @@ para recuperar el valor de una vaariable se debe utilizar var(--nombre-variable)
     --color-tarjeta: #F3F0E8;
 }
 
-/*========== ESTILOS GENERALES ============*/
+
+/*==================================================
+                ESTILOS GENERALES
+==================================================*/
 
 * {
     box-sizing: border-box;
-}
-
-#contenedor {
-    width: 100%;
-    max-width: 1920px;
-    min-height: 100vh;
-    margin: 0;
-    padding: 0;
 }
 
 body {
@@ -40,7 +35,12 @@ section {
     scroll-margin-top: 5rem;
 }
 
-/* ======== NAVEGACION ========= */
+
+/*==================================================
+                NAVEGACIÓN
+==================================================*/
+
+/* Barra de navegación */
 
 .navbar {
     background-color: var(--color-oscuro);
@@ -48,7 +48,7 @@ section {
 }
 
 .navbar-brand {
-    font-family: var(--font-titulos);
+    font-family: "Cormorant Garamond", serif;
     font-size: 1.8rem;
     font-weight: 600;
     letter-spacing: 0.1rem;
@@ -68,7 +68,7 @@ section {
 }
 
 .navbar-nav .nav-link {
-    font-family: var(--font-textos);
+    font-family: "DM Sans", sans-serif;
     font-size: 0.95rem;
     color: var(--color-fondo);
     padding: 0.7rem 0;
@@ -78,7 +78,7 @@ section {
     color: var(--color-salvia);
 }
 
-/* ========= MENU DESPLEGABLE ======== */
+/* Menú desplegable */
 
 .dropdown-menu {
     background-color: #30352F;
@@ -89,7 +89,7 @@ section {
 
 .dropdown-item {
     color: var(--color-fondo);
-    font-family: var(--font-textos);
+    font-family: "DM Sans", sans-serif;
     font-size: 0.9rem;
     padding: 0.6rem 0.8rem;
 }
@@ -99,48 +99,19 @@ section {
     color: var(--color-oscuro);
 }
 
-/*======== PORTADA ==========*/
 
-.portada {
-    padding-top: 2rem;
-    padding-bottom: 2rem;
-}
+/*==================================================
+            COMPONENTES REUTILIZABLES
+==================================================*/
 
-.portadaTitulo {
-    font-size: 3rem;
-    font-weight: 500;
-    letter-spacing: -0.1rem;
-    color: var(--color-oscuro);
-}
-
-.portadaTexto {
-    font-size: 0.95rem;
-    line-height: 1.8;
-}
-
-.portadaImagen {
-    width: 100%;
-    border-radius: 0.5rem;
-}
-
-/* ===== TARJETAS DEL INICIO ===== */
-
-#secciones {
-    padding-top: 2rem;
-    padding-bottom: 3rem;
-}
-
-#secciones h2 {
-    color: var(--color-oscuro);
-    font-size: 1.8rem;
-    font-weight: 500;
-}
+/* Tarjetas */
 
 .tarjetaSade {
     background-color: var(--color-tarjeta);
     border: none;
     border-radius: 0.5rem;
     overflow: hidden;
+    box-shadow: 0 0.5rem 1.5rem rgba(73, 54, 87, 0.15);
 }
 
 .tarjetaImagen {
@@ -178,4 +149,184 @@ section {
     border: 1px solid var(--color-salvia);
     border-radius: 0.25rem;
     background-color: transparent;
+}
+
+.enlaceTarjeta:hover {
+    transform: scale(1.03);
+}
+
+
+/*==================================================
+                PÁGINA DE INICIO
+==================================================*/
+
+/* Portada */
+
+.portada {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+
+.portadaTitulo {
+    font-size: 3rem;
+    font-weight: 500;
+    letter-spacing: -0.1rem;
+    color: var(--color-oscuro);
+}
+
+.portadaTexto {
+    font-size: 0.95rem;
+    line-height: 1.8;
+}
+
+.portadaImagen {
+    width: 100%;
+    border-radius: 0.5rem;
+}
+
+/* Sección de tarjetas */
+
+#secciones {
+    padding-top: 2rem;
+    padding-bottom: 3rem;
+}
+
+#secciones h2 {
+    color: var(--color-oscuro);
+    font-size: 1.8rem;
+    font-weight: 500;
+}
+
+
+/*==================================================
+        ESTILOS GENERALES DE PÁGINAS INTERNAS
+==================================================*/
+
+/* Contenedores y encabezados */
+
+.paginaContenedor {
+    padding-top: 2rem;
+    padding-bottom: 3rem;
+}
+
+.encabezadoPagina {
+    margin-bottom: 2rem;
+}
+
+.tituloPagina {
+    font-size: 2.8rem;
+    color: var(--color-oscuro);
+    margin-bottom: 0.3rem;
+}
+
+.subtituloPagina {
+    font-size: 2rem;
+    font-weight: 500;
+    color: var(--color-marron);
+}
+
+.textoIntroduccion {
+    font-size: 0.95rem;
+    line-height: 1.8;
+    margin-top: 1rem;
+}
+
+/* Imágenes */
+
+.imagenPrincipal {
+    width: 80%;
+    border-radius: 0.6rem;
+    margin-bottom: 2.5rem;
+}
+
+.imagenApartado {
+    width: 100%;
+    border-radius: 0.6rem;
+}
+
+/* Bloques de texto */
+
+.bloqueTexto {
+    padding: 1.3rem 0;
+    margin-bottom: 2rem;
+}
+
+.bloqueTexto h3,
+.bloqueInterno h3 {
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+}
+
+.bloqueTexto h3 {
+    color: var(--color-oscuro);
+}
+
+.bloqueInterno h3 {
+    color: var(--color-marron);
+}
+
+.bloqueTexto p {
+    color: var(--color-oscuro);
+    font-size: 0.95rem;
+    line-height: 1.8;
+    margin-bottom: 1rem;
+}
+
+.bloqueTexto p:last-child {
+    margin-bottom: 0;
+}
+
+
+/*==================================================
+                GALERIA DE ALBUMES
+==================================================*/
+
+.portadaAlbum {
+    border: none;
+    border-radius: 0.5rem;
+    overflow: hidden;
+}
+
+.portadaAlbum img {
+    transition: transform 0.3s ease;
+}
+
+.portadaAlbum:hover img {
+    transform: scale(1.04);
+}
+
+.bloqueTexto ul {
+    padding-left: 1.2rem;
+    margin-bottom: 1.5rem;
+}
+
+.bloqueTexto li {
+    font-size: 0.95rem;
+    line-height: 1.8;
+    color: var(--color-oscuro);
+}
+
+.bloqueTexto h3:not(:first-child) {
+    margin-top: 1.5rem;
+}
+
+/*==================================================
+            FORMULARIO DE CONTACTO
+==================================================*/
+
+#formContacto .form-control:focus,
+#formContacto .form-select:focus {
+    border-color: var(--color-marron);
+    box-shadow: 0 0 0 0.2rem rgba(113, 78, 67, 0.15);
+}
+
+#formContacto .btn {
+    background-color: var(--color-oscuro);
+    border: 1px solid var(--color-oscuro);
+    padding: 0.7rem 1.5rem;
+}
+
+#formContacto .btn:hover {
+    background-color: var(--color-marron);
+    border-color: var(--color-marron);
 }
