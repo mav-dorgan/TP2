@@ -4,26 +4,54 @@
 
 const acontecimientos = [
     {
+        fecha: "1981",
+        titulo: "Comienzos con Pride",
+        categoria: "Trayectoria",
+        imagen: "img/biografia/biografia-2.jpg",
+        descripcion: "Sade Adu comienza a cantar con la banda británica Pride y realiza presentaciones por distintos lugares del Reino Unido. Allí empieza a desarrollar su identidad musical."
+    },
+    {
         fecha: "1984",
         titulo: "Diamond Life",
         categoria: "Álbum",
-        imagen: "img/discografia/diamond-life.jpg",
-        descripcion: "El álbum debut de Sade, que alcanzó reconocimiento internacional."
+        imagen: "img/discografia/discografia-1.png",
+        descripcion: "Sale su álbum debut, que incluye canciones como Smooth Operator y Your Love Is King. El disco marca el inicio de su éxito internacional."
     },
     {
-        fecha: "1985",
-        titulo: "Promise",
-        categoria: "Álbum",
-        imagen: "img/discografia/promise.jpg",
-        descripcion: "El segundo álbum de estudio de Sade."
+        fecha: "1986",
+        titulo: "Primer Grammy",
+        categoria: "Trayectoria",
+        imagen: "img/legado/legado-2.jpeg",
+        descripcion: "Sade gana el Grammy a Mejor Artista Nuevo, un reconocimiento importante en los comienzos de su carrera."
     },
     {
         fecha: "1992",
         titulo: "Love Deluxe",
         categoria: "Álbum",
-        imagen: "img/discografia/love-deluxe.jpg",
-        descripcion: "Un álbum que consolidó la identidad musical de Sade."
-    }
+        imagen: "img/discografia/discografia-4.png",
+        descripcion: "Se publica uno de sus álbumes más reconocidos, que contiene canciones como No Ordinary Love y Kiss of Life."
+    },
+    {
+        fecha: "2000",
+        titulo: "Lovers Rock",
+        categoria: "Álbum",
+        imagen: "img/discografia/discografia-5.png",
+        descripcion: "Después de ocho años sin publicar un álbum de estudio, la banda regresa con un nuevo trabajo que incluye By Your Side."
+    },
+    {
+        fecha: "2010",
+        titulo: "Soldier of Love",
+        categoria: "Álbum",
+        imagen: "img/discografia/discografia-6.png",
+        descripcion: "Publican su sexto álbum de estudio, diez años después de Lovers Rock. Representa una nueva etapa musical para la banda."
+    },
+    {
+        fecha: "2011",
+        titulo: "Bring Me Home Tour",
+        categoria: "Gira",
+        imagen: "img/giras/giras-5.jpg",
+        descripcion: "Gira internacional con 106 paises, incluyendo su primera visita a Argentina."
+    },
 ];
 
 // Genero los acontecimientos en la linea de tiempo como botones

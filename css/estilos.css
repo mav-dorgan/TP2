@@ -304,6 +304,17 @@ section {
     padding: 1rem;
 }
 
+#imagenAcontecimiento {
+    width: 100%;
+    max-width: 20rem;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 0.5rem;
+    display: block;
+    margin: 0 auto;
+}
+
 .contenidoModal {
     position: relative;
     background-color: var(--color-tarjeta);
