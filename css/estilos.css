@@ -111,7 +111,7 @@ section {
     border: none;
     border-radius: 0.5rem;
     overflow: hidden;
-    box-shadow: 0 0.5rem 1.5rem rgba(73, 54, 87, 0.15);
+    box-shadow: 0 0.5rem 1.5rem rgba(32, 35, 31, 0.15);
 }
 
 .tarjetaImagen {
@@ -276,68 +276,17 @@ section {
     margin-bottom: 0;
 }
 
-/*======================================
-             LINEA DE TIEMPO
-=========================================*/
+
+/*==================================================
+                LÍNEA DE TIEMPO
+==================================================*/
+
+/* Contenedor de los acontecimientos */
 
 #contenedorLineaTiempo {
-    overflow-x: auto; /*permite que cuando el contenido se desborda horizontalmente aparezca una barra de desplazamiento horizontal*/
+    overflow-x: auto;
     padding: 2rem 0;
 }
-
-#eventosLineaTiempo {
-    display: flex;
-    align-items: center;
-    min-width: max-content; /*hace que el contenedor tenga el ancho necesario para que entren todos los acontecimientos en una misma línea, en lugar de comprimirlos para que entren en la pantalla.*/
-}
-
-/* Ventana emergente */
-
-#ventanaAcontecimiento {
-    display: none;
-    position: fixed;
-    z-index: 1050; /*permite que la ventana se abra por encima del resto de los elementos de la pagina*/
-    inset: 0;
-    background-color: rgba(32, 35, 31, 0.8);
-    justify-content: center;
-    align-items: center;
-    padding: 1rem;
-}
-
-#imagenAcontecimiento {
-    width: 100%;
-    max-width: 20rem;
-    aspect-ratio: 1 / 1;
-    object-fit: cover;
-    object-position: center;
-    border-radius: 0.5rem;
-    display: block;
-    margin: 0 auto;
-}
-
-.contenidoModal {
-    position: relative;
-    background-color: var(--color-tarjeta);
-    width: 100%;
-    max-width: 35rem;
-    padding: 2rem;
-    border-radius: 0.5rem;
-    max-height: 90vh;
-    overflow-y: auto;
-}
-
-#cerrarModal {
-    position: absolute;
-    top: 0.5rem;
-    right: 0.8rem;
-    border: none;
-    background: none;
-    font-size: 2rem;
-    color: var(--color-oscuro);
-    cursor: pointer;
-}
-
-/* Línea horizontal */
 
 #eventosLineaTiempo {
     display: flex;
@@ -345,6 +294,8 @@ section {
     min-width: max-content;
     position: relative;
 }
+
+/* Línea horizontal */
 
 #eventosLineaTiempo::before {
     content: "";
@@ -396,8 +347,54 @@ section {
     color: var(--color-salvia);
 }
 
+/* Ventana emergente de la línea de tiempo */
+
+#ventanaAcontecimiento {
+    display: none;
+    position: fixed;
+    z-index: 1050;
+    inset: 0;
+    background-color: rgba(32, 35, 31, 0.8);
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+}
+
+.contenidoModal {
+    position: relative;
+    background-color: var(--color-tarjeta);
+    width: 100%;
+    max-width: 35rem;
+    padding: 2rem;
+    border-radius: 0.5rem;
+    max-height: 90vh;
+    overflow-y: auto;
+}
+
+#imagenAcontecimiento {
+    width: 100%;
+    max-width: 20rem;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+    border-radius: 0.5rem;
+    display: block;
+    margin: 0 auto;
+}
+
+#cerrarModal {
+    position: absolute;
+    top: 0.5rem;
+    right: 0.8rem;
+    border: none;
+    background: none;
+    font-size: 2rem;
+    color: var(--color-oscuro);
+    cursor: pointer;
+}
+
+
 /*==================================================
-                GALERIA DE ALBUMES
+                GALERÍA DE ÁLBUMES
 ==================================================*/
 
 .portadaAlbum {
@@ -429,6 +426,7 @@ section {
     margin-top: 1.5rem;
 }
 
+
 /*==================================================
             FORMULARIO DE CONTACTO
 ==================================================*/
@@ -448,4 +446,92 @@ section {
 #formContacto .btn:hover {
     background-color: var(--color-marron);
     border-color: var(--color-marron);
+}
+
+
+/*==================================================
+            MODAL - GALERÍA DE ÁLBUMES
+==================================================*/
+
+/* Fondo oscuro detrás de la ventana */
+
+#modalAlbum {
+    background-color: rgba(32, 35, 31, 0.8);
+}
+
+/* Contenedor principal de la ventana */
+
+#modalAlbum .modal-dialog {
+    width: 100%;
+    max-width: 35rem;
+}
+
+#modalAlbum .modal-content {
+    position: relative;
+    background-color: var(--color-tarjeta);
+    border: none;
+    border-radius: 0.5rem;
+    padding: 2rem;
+    max-height: 90vh;
+    overflow-y: auto;
+}
+
+/* Encabezado del modal */
+
+#modalAlbum .modal-header {
+    border-bottom: none;
+    padding: 0;
+    align-items: center;
+}
+
+/* Título del álbum */
+
+#modalAlbumTitulo {
+    font-family: "Cormorant Garamond", serif;
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: var(--color-oscuro);
+    margin: 0 0 1rem 0;
+    padding: 0;
+    text-align: left;
+}
+
+/* Cuerpo del modal */
+
+#modalAlbum .modal-body {
+    padding: 0;
+}
+
+/* Fecha de lanzamiento del álbum */
+
+#modalAlbumFecha {
+    font-family: "DM Sans", sans-serif;
+    font-size: 0.9rem;
+    color: var(--color-oscuro);
+    margin-bottom: 1rem;
+}
+
+/* Botón para cerrar */
+
+#modalAlbum .btn-close {
+    position: absolute;
+    top: 1.5rem;
+    right: 1.5rem;
+    opacity: 1;
+}
+
+/* Contenido del modal */
+
+#modalAlbumContenido {
+    color: var(--color-oscuro);
+    font-family: "DM Sans", sans-serif;
+    font-size: 0.95rem;
+    line-height: 1.8;
+    padding: 0;
+}
+
+/* Separación entre párrafos */
+
+#modalAlbumContenido p {
+    margin-bottom: 1rem;
 }
