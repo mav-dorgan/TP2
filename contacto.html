@@ -1,285 +1,299 @@
-    <!DOCTYPE html>
-    <html lang="es">
-        <head>
-            <meta charset="utf-8">
-            <meta name="viewport" content="width=device-width, initial-scale=1">
-            <!-- meta viewport configura el área visible de la página en los dispositivos,
+
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <!-- meta viewport configura el área visible de la página en los dispositivos,
         para poder adaptar el contenido a diferentes tamaños de pantalla.
 
-            name="viewport": indica que se está configurando el área visible de la página.
+        name="viewport": indica que se está configurando el área visible de la página.
 
-            width=device-width: establece el ancho del viewport para que coincida con el ancho
-            de la pantalla del dispositivo.
+        width=device-width: establece el ancho del viewport para que coincida con el ancho
+        de la pantalla del dispositivo.
 
-            initial-scale=1: establece el nivel de zoom inicial en 100%, es decir, sin ampliación
-            ni reducción al cargar la página. -->
-            <title>Contacto</title>
+        initial-scale=1: establece el nivel de zoom inicial en 100%, es decir, sin ampliación
+        ni reducción al cargar la página. -->
 
-            <!--FUENTES-->
-            <link rel="preconnect" href="https://fonts.googleapis.com">
-            <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-            <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap" rel="stylesheet">
+        <title>Contacto</title>
 
-            <!-- Bootstrap CSS -->
-            <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
-            <!-- Propio CSS -->
-            <link href="css/estilos.css" rel="stylesheet">
-        </head>
-        <body>
-            <header>
-                <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-                    <!--navbar es la clase base para indicar un nav en BS.
-                    navbar-expand-lg indica que la barra se muestra expandida en pantallas grandes (lg) y se compacta en pantallas menores.-->
-                    <div class="container">
+        <!-- FUENTES -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap" rel="stylesheet">
 
-                        <a class="navbar-brand" href="index.html">SADE</a>
-                        <!--navbar-brand indica la marca o nombre del sitio-->
+        <!-- Bootstrap CSS -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
 
-                        <button class="navbar-toggler" type="button"
-                            data-bs-toggle="collapse" data-bs-target="#menuSade"
-                            aria-controls="menuSade" aria-expanded="false"
-                            aria-label="Abrir navegación">
-                            <span class="navbar-toggler-icon"></span>
-                        </button> <!--crea el boton que colapsa el menu en dispositivos pequeños-->
-                        <!--data-bs-toggle="collapse" le indica a Bootstrap que el botón controla un elemento que se puede desplegar o contraer.
-                        data-bs-target="#menuSade" indica qué elemento va a controlar.
-                        id="menuSade" identifica al bloque que se va a abrir y cerrar.-->
+        <!-- Propio CSS -->
+        <link href="css/estilos.css" rel="stylesheet">
+    </head>
 
-                        <div class="collapse navbar-collapse" id="menuSade">
+    <body>
+        <header>
+            <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
 
-                            <ul class="navbar-nav ms-auto">
+                <!-- navbar es la clase base para indicar un nav en BS.
+                navbar-expand-lg indica que la barra se muestra expandida en pantallas grandes (lg)
+                y se compacta en pantallas menores. -->
 
-                                <li class="nav-item dropdown">
-                                    <a class="nav-link dropdown-toggle" href="#"
+                <div class="container">
+
+                    <a class="navbar-brand" href="index.html">SADE</a>
+
+                    <!-- navbar-brand indica la marca o nombre del sitio -->
+
+                    <button class="navbar-toggler" type="button"
+                        data-bs-toggle="collapse" data-bs-target="#menuSade"
+                        aria-controls="menuSade" aria-expanded="false"
+                        aria-label="Abrir navegación">
+
+                        <span class="navbar-toggler-icon"></span>
+
+                    </button>
+
+                    <!-- Crea el botón que colapsa el menú en dispositivos pequeños.
+                    data-bs-toggle="collapse" le indica a Bootstrap que el botón controla
+                    un elemento que se puede desplegar o contraer.
+                    data-bs-target="#menuSade" indica qué elemento va a controlar.
+                    id="menuSade" identifica al bloque que se va a abrir y cerrar. -->
+
+                    <div class="collapse navbar-collapse" id="menuSade">
+
+                        <ul class="navbar-nav ms-auto">
+
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#"
                                     role="button" data-bs-toggle="dropdown">
-                                        Trayectoria
-                                    </a>
+                                    Trayectoria
+                                </a>
 
-                                    <ul class="dropdown-menu">
-                                        <li>
-                                            <a class="dropdown-item" href="seccion-1/index.html">Biografía</a>
-                                        </li>
-                                        <li>
-                                            <a class="dropdown-item" href="seccion-1/evolucion.html">Evolución</a>
-                                        </li>
-                                    </ul>
-                                </li>
+                                <ul class="dropdown-menu">
+                                    <li>
+                                        <a class="dropdown-item" href="seccion-1/index.html">Biografía</a>
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item" href="seccion-1/evolucion.html">Evolución</a>
+                                    </li>
+                                </ul>
+                            </li>
 
-                                <li class="nav-item dropdown">
-                                    <a class="nav-link dropdown-toggle" href="#"
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#"
                                     role="button" data-bs-toggle="dropdown">
-                                        Discografía
-                                    </a>
+                                    Discografía
+                                </a>
 
-                                    <ul class="dropdown-menu">
-                                        <li>
-                                            <a class="dropdown-item" href="seccion-2/index.html">Discografía</a>
-                                        </li>
-                                        <li>
-                                            <a class="dropdown-item" href="seccion-2/identidad-visual.html">Identidad visual</a>
-                                        </li>
-                                    </ul>
-                                </li>
+                                <ul class="dropdown-menu">
+                                    <li>
+                                        <a class="dropdown-item" href="seccion-2/index.html">Discografía</a>
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item" href="seccion-2/identidad-visual.html">Identidad visual</a>
+                                    </li>
+                                </ul>
+                            </li>
 
-                                <li class="nav-item dropdown">
-                                    <a class="nav-link dropdown-toggle" href="#"
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#"
                                     role="button" data-bs-toggle="dropdown">Giras</a>
 
-                                    <ul class="dropdown-menu">
-                                        <li>
-                                            <a class="dropdown-item" href="seccion-3/index.html">Giras</a>
-                                        </li>
-                                        <li>
-                                            <a class="dropdown-item" href="seccion-3/legado.html">Legado</a>
-                                        </li>
-                                    </ul>
-                                </li>
+                                <ul class="dropdown-menu">
+                                    <li>
+                                        <a class="dropdown-item" href="seccion-3/index.html">Giras</a>
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item" href="seccion-3/legado.html">Legado</a>
+                                    </li>
+                                </ul>
+                            </li>
 
-                                <li class="nav-item">
-                                    <a class="nav-link" href="contacto.html">Contacto</a>
-                                </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="contacto.html">Contacto</a>
+                            </li>
 
-                                <li class="nav-item">
-                                    <a class="nav-link" href="creditos.html">Créditos</a>
-                                </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="creditos.html">Créditos</a>
+                            </li>
 
-                            </ul>
-                        </div>
+                        </ul>
                     </div>
-                </nav>
-            </header>
-            
-            <main>
-                <div class="container paginaContenedor">
+                </div>
+            </nav>
+        </header>
 
-                    <div class="row align-items-start g-4">
+        <main>
+            <div class="container paginaContenedor">
 
-                        <!-- PRESENTACIÓN -->
-                        <div class="col-12 col-lg-4 bloqueTexto">
+                <div class="row align-items-start g-4">
 
-                            <h1 class="tituloPagina">Contacto</h1>
+                    <!-- PRESENTACIÓN -->
+                    <div class="col-12 col-lg-4 bloqueTexto">
 
-                            <p>
-                                ¿Sos fan de Sade? Este espacio también es para vos.
-                                Queremos conocer tu opinión, recibir tus mensajes
-                                y conectar con personas que comparten el interés
-                                por su música.
-                            </p>
+                        <h1 class="tituloPagina">Contacto</h1>
 
-                            <hr>
+                        <p>
+                            ¿Sos fan de Sade? Este espacio también es para vos.
+                            Queremos conocer tu opinión, recibir tus mensajes
+                            y conectar con personas que comparten el interés
+                            por su música.
+                        </p>
 
-                            <h2 class="subtituloPagina">Compartí tu pasión</h2>
+                        <hr>
 
-                            <p>
-                                Podés escribirnos para compartir una reflexión,
-                                contarnos qué significa su música para vos
-                                o expresar tu interés en formar parte de nuestra
-                                comunidad de fans.
-                            </p>
+                        <h2 class="subtituloPagina">Compartí tu pasión</h2>
 
-                        </div>
+                        <p>
+                            Podés escribirnos para compartir una reflexión,
+                            contarnos qué significa su música para vos
+                            o expresar tu interés en formar parte de nuestra
+                            comunidad de fans.
+                        </p>
 
+                    </div>
 
-                        <!-- FORMULARIO -->
-                        <div class="col-12 col-lg-8" bloqueTexto>
+                    <!-- FORMULARIO -->
+                    <div class="col-12 col-lg-8">
 
-                            <h2 class="subtituloPagina">Escribinos</h2>
+                        <h2 class="subtituloPagina">Escribinos</h2>
 
-                            <p>
-                                Completá el formulario y dejanos tu mensaje.
-                            </p>
+                        <p>
+                            Completá el formulario y dejanos tu mensaje.
+                        </p>
 
-                            <!-- novalidate desactiva las validaciones automáticas del navegador
-                            para que podamos realizarlas mediante JavaScript. -->
-                            <form id="formContacto" novalidate>
+                        <!-- novalidate desactiva las validaciones automáticas del navegador
+                        para que podamos realizarlas mediante JavaScript. -->
 
-                                <!-- NOMBRE -->
-                                <div class="mb-3">
-                                    <!-- form-label aplica los estilos de Bootstrap a las etiquetas
-                                        que identifican cada campo del formulario. -->
-                                    <label for="nombre" class="form-label">
-                                        Nombre
-                                    </label>
+                        <form id="formContacto" novalidate>
 
-                                    <!-- form-control aplica los estilos de Bootstrap a los campos de entrada,
-                                        estableciendo una apariencia uniforme y adaptada al formulario. -->
-                                    <input type="text"
-                                        class="form-control"
-                                        id="nombre"
-                                        name="nombre"
-                                        autocomplete="name">
+                            <!-- NOMBRE -->
+                            <div class="mb-3">
 
-                                    <!-- Espacio para mostrar errores del nombre
-                                     text-danger: muestra el texto en rojo
-                                     small: reduce su tamaño
-                                     mt-1: agrega un pequeño margen superior. -->
-                                    <div id="errorNombre" class="text-danger small mt-1"></div>
+                                <!-- form-label aplica los estilos de Bootstrap a las etiquetas
+                                que identifican cada campo del formulario. -->
 
-                                </div>
+                                <label for="nombre" class="form-label">
+                                    Nombre
+                                </label>
 
+                                <!-- form-control aplica los estilos de Bootstrap a los campos de entrada,
+                                estableciendo una apariencia uniforme y adaptada al formulario. -->
 
-                                <!-- CORREO ELECTRÓNICO -->
-                                <div class="mb-3">
+                                <input type="text"
+                                    class="form-control"
+                                    id="nombre"
+                                    name="nombre"
+                                    autocomplete="name">
 
-                                    <label for="email" class="form-label">
-                                        Correo electrónico
-                                    </label>
+                                <!-- Espacio para mostrar errores del nombre.
+                                text-danger: muestra el texto en rojo.
+                                small: reduce su tamaño.
+                                mt-1: agrega un pequeño margen superior. -->
 
-                                    <input type="email"
-                                        class="form-control"
-                                        id="email"
-                                        name="email"
-                                        autocomplete="email">
+                                <div id="errorNombre" class="text-danger small mt-1"></div>
 
-                                    <!-- Espacio para mostrar errores del correo -->
-                                    <div id="errorEmail" class="text-danger small mt-1"></div>
-
-                                </div>
-
-
-                                <!-- MOTIVO DEL CONTACTO -->
-                                <div class="mb-3">
-
-                                    <label for="motivo" class="form-label">
-                                        Motivo del contacto
-                                    </label>
-
-                                    <select class="form-select"
-                                        id="motivo"
-                                        name="motivo">
-
-                                        <option value="">Seleccioná una opción</option>
-
-                                        <option value="mensaje">
-                                            Enviar un mensaje
-                                        </option>
-
-                                        <option value="fanclub">
-                                            Unirme a la comunidad de fans
-                                        </option>
-
-                                    </select>
-
-                                    <!-- Espacio para mostrar errores del motivo -->
-                                    <div id="errorMotivo" class="text-danger small mt-1"></div>
-
-                                </div>
-
-
-                                <!-- MENSAJE -->
-                                <div class="mb-4">
-
-                                    <label for="mensaje" class="form-label">
-                                        Mensaje
-                                    </label>
-
-                                    <textarea class="form-control"
-                                        id="mensaje"
-                                        name="mensaje"
-                                        rows="5"></textarea>
-
-                                    <!-- Espacio para mostrar errores del mensaje -->
-                                    <div id="errorMensaje" class="text-danger small mt-1"></div>
-
-                                </div>
-
-
-                                <!-- BOTÓN -->
-                                <button type="submit" class="btn btn-dark">
-                                    Enviar mensaje
-                                </button>
-
-                            </form>
-
-
-                            <!-- RESPUESTA DE JAVASCRIPT -->
-                            <div id="respuestaFormulario"
-                                class="mt-3">
                             </div>
 
-                        </div>
+                            <!-- CORREO ELECTRÓNICO -->
+                            <div class="mb-3">
+
+                                <label for="email" class="form-label">
+                                    Correo electrónico
+                                </label>
+
+                                <input type="email"
+                                    class="form-control"
+                                    id="email"
+                                    name="email"
+                                    autocomplete="email">
+
+                                <!-- Espacio para mostrar errores del correo -->
+
+                                <div id="errorEmail" class="text-danger small mt-1"></div>
+
+                            </div>
+
+                            <!-- MOTIVO DEL CONTACTO -->
+                            <div class="mb-3">
+
+                                <label for="motivo" class="form-label">
+                                    Motivo del contacto
+                                </label>
+
+                                <select class="form-select"
+                                    id="motivo"
+                                    name="motivo">
+
+                                    <option value="">Seleccioná una opción</option>
+
+                                    <option value="mensaje">
+                                        Enviar un mensaje
+                                    </option>
+
+                                    <option value="fanclub">
+                                        Unirme a la comunidad de fans
+                                    </option>
+
+                                </select>
+
+                                <!-- Espacio para mostrar errores del motivo -->
+
+                                <div id="errorMotivo" class="text-danger small mt-1"></div>
+
+                            </div>
+
+                            <!-- MENSAJE -->
+                            <div class="mb-4">
+
+                                <label for="mensaje" class="form-label">
+                                    Mensaje
+                                </label>
+
+                                <textarea class="form-control"
+                                    id="mensaje"
+                                    name="mensaje"
+                                    rows="5"></textarea>
+
+                                <!-- Espacio para mostrar errores del mensaje -->
+
+                                <div id="errorMensaje" class="text-danger small mt-1"></div>
+
+                            </div>
+
+                            <!-- BOTÓN -->
+                            <button type="submit" class="btn btn-dark">
+                                Enviar mensaje
+                            </button>
+
+                        </form>
+
+                        <!-- RESPUESTA DE JAVASCRIPT -->
+                        <div id="respuestaFormulario" class="mt-3"></div>
 
                     </div>
 
                 </div>
 
-            </main>
+            </div>
+        </main>
 
-            <footer class="bg-dark text-white text-center py-4">
+        <footer class="bg-dark text-white text-center py-4">
 
-                <p>&copy; 2026 TP-2 — Universidad Nacional de las Artes, Informática General.</p>
+            <p>&copy; 2026 TP-2 — Universidad Nacional de las Artes, Informática General.</p>
 
-                <p>
-                    Un proyecto de La Rosa y Dorgan.
-                    <a href="creditos.html" class="text-white">Conocé al equipo</a>.
-                </p>
+            <p>
+                Un proyecto de La Rosa y Dorgan.
+                <a href="creditos.html" class="text-white">Conocé al equipo</a>.
+            </p>
 
-            </footer>
+        </footer>
 
-            <!-- Bootstrap JavaScript -->
-           <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- Bootstrap JavaScript -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
 
-           <!-- Archivo JavaScript del proyecto -->
-            <script src="js/formulario-contacto.js"></script>
-        </body>
-    </html>
+        <!-- Archivo JavaScript del proyecto -->
+        <script src="js/formulario-contacto.js"></script>
+
+    </body>
+</html>

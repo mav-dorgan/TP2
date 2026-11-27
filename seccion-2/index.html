@@ -1,10 +1,12 @@
+
 <!DOCTYPE html>
 <html lang="es">
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
+
         <!-- meta viewport configura el área visible de la página en los dispositivos,
-       para poder adaptar el contenido a diferentes tamaños de pantalla.
+        para poder adaptar el contenido a diferentes tamaños de pantalla.
 
         name="viewport": indica que se está configurando el área visible de la página.
 
@@ -16,16 +18,18 @@
 
         <title>Sade Adu: álbumes</title>
 
-        <!--FUENTES-->
+        <!-- FUENTES -->
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap" rel="stylesheet">
-        
+
         <!-- Bootstrap CSS -->
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+
         <!-- Propio CSS -->
         <link href="../css/estilos.css" rel="stylesheet">
     </head>
+
     <body>
         <header>
             <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
@@ -51,7 +55,8 @@
                                 <a class="nav-link dropdown-toggle" href="#"
                                     role="button" data-bs-toggle="dropdown"
                                     aria-expanded="false">
-                                    Trayectoria </a>
+                                    Trayectoria
+                                </a>
 
                                 <ul class="dropdown-menu">
                                     <li>
@@ -69,15 +74,16 @@
                                 <a class="nav-link dropdown-toggle" href="#"
                                     role="button" data-bs-toggle="dropdown"
                                     aria-expanded="false">
-                                    Discografía </a>
+                                    Discografía
+                                </a>
 
                                 <ul class="dropdown-menu">
                                     <li>
-                                        <a class="dropdown-item" href="index.html">Álbumes </a>
+                                        <a class="dropdown-item" href="index.html">Álbumes</a>
                                     </li>
 
                                     <li>
-                                        <a class="dropdown-item" href="identidad-visual.html">Identidad visual </a>
+                                        <a class="dropdown-item" href="identidad-visual.html">Identidad visual</a>
                                     </li>
                                 </ul>
                             </li>
@@ -110,6 +116,7 @@
                             <li class="nav-item">
                                 <a class="nav-link" href="../creditos.html">Créditos</a>
                             </li>
+
                         </ul>
                     </div>
                 </div>
@@ -119,14 +126,11 @@
         <main>
 
             <!-- container: centra el contenido y establece un ancho máximo
-                que se adapta al tamaño de pantalla.-->
+            que se adapta al tamaño de pantalla. -->
             <div class="container paginaContenedor">
 
                 <!-- INTRODUCCIÓN -->
-
-                <!-- text-center: centra el texto.
-                    mb-5: agrega un margen inferior para separar la introducción
-                    de la galería. -->
+                <!-- text-center: centra el texto. -->
                 <section class="text-center encabezadoPagina">
 
                     <h1 class="tituloPagina">Álbumes</h1>
@@ -143,133 +147,114 @@
 
                 </section>
 
-
                 <!-- GALERÍA DE ÁLBUMES -->
 
                 <!-- row: crea una fila para organizar las columnas.
-                    g-3: establece un espacio entre las imágenes. -->
+                g-3: establece un espacio entre las imágenes. -->
                 <section class="row g-3 mb-5" aria-label="Galería de álbumes">
 
-
                     <!-- col-12: ocupa todo el ancho en celulares (1 imagen por fila).
-                        col-md-6: ocupa la mitad del ancho en pantallas medianas (2 por fila).
-                        col-lg-4: ocupa un tercio del ancho en pantallas grandes (3 por fila). -->
+                    col-md-6: ocupa la mitad del ancho en pantallas medianas (2 por fila).
+                    col-lg-4: ocupa un tercio del ancho en pantallas grandes (3 por fila). -->
+
                     <div class="col-12 col-md-6 col-lg-4">
 
                         <!-- ratio ratio-1x1: establece un espacio cuadrado.
-                            object-fit-cover: hace que la imagen cubra el espacio
-                            sin deformarse, recortando lo necesario.
-                            data-bs-toggle="tooltip": Identifica el elemento como uno que tendrá un Tooltip de Bootstrap.
-                            data-bs-placement="top": Indica que el tooltip se ubicará arriba del elemento.
-                            title="...": Contiene el texto que se mostrará dentro del tooltip. -->
+                        object-fit-cover: hace que la imagen cubra el espacio
+                        sin deformarse, recortando lo necesario.
+                        data-bs-toggle="modal": identifica el botón como disparador de un modal.
+                        data-bs-target: indica qué modal se abrirá.
+                        data-album: permite identificar el álbum seleccionado desde JavaScript. -->
+
                         <button type="button"
-                            class="btn p-0 w-100 portadaAlbum"
+                            class="btn p-0 w-100 portadaAlbum ratio ratio-1x1"
                             data-bs-toggle="modal"
                             data-bs-target="#modalAlbum"
                             data-album="diamond-life">
 
-                            <div class="ratio ratio-1x1">
-                                <img src="../img/discografia/discografia-1.png"
-                                    class="object-fit-cover"
-                                    alt="Portada de Diamond Life">
-                            </div>
+                            <img src="../img/discografia/discografia-1.png"
+                                class="object-fit-cover"
+                                alt="Portada de Diamond Life">
 
                         </button>
 
                     </div>
 
-
                     <div class="col-12 col-md-6 col-lg-4">
-                        <!--data-bs-toggle="tooltip" indica que el botón tendrá un tooltip que se activa con js.
-                            data-bs-placement="top" indica que aparecerá arriba.
-                            title="Diamond Life (1984)" contiene el texto que aparecerá.-->
+
                         <button type="button"
-                            class="btn p-0 w-100 portadaAlbum"
+                            class="btn p-0 w-100 portadaAlbum ratio ratio-1x1"
                             data-bs-toggle="modal"
                             data-bs-target="#modalAlbum"
                             data-album="promise">
 
-                            <div class="ratio ratio-1x1">
-                                <img src="../img/discografia/discografia-2.png"
-                                    class="object-fit-cover"
-                                    alt="Portada de Promise">
-                            </div>
+                            <img src="../img/discografia/discografia-2.png"
+                                class="object-fit-cover"
+                                alt="Portada de Promise">
 
                         </button>
 
                     </div>
 
-
                     <div class="col-12 col-md-6 col-lg-4">
 
                         <button type="button"
-                            class="btn p-0 w-100 portadaAlbum"
+                            class="btn p-0 w-100 portadaAlbum ratio ratio-1x1"
                             data-bs-toggle="modal"
                             data-bs-target="#modalAlbum"
                             data-album="stronger-than-pride">
 
-                            <div class="ratio ratio-1x1">
-                                <img src="../img/discografia/discografia-3.png"
-                                    class="object-fit-cover"
-                                    alt="Portada de Stronger Than Pride">
-                            </div>
+                            <img src="../img/discografia/discografia-3.png"
+                                class="object-fit-cover"
+                                alt="Portada de Stronger Than Pride">
 
                         </button>
 
                     </div>
 
-
                     <div class="col-12 col-md-6 col-lg-4">
 
                         <button type="button"
-                            class="btn p-0 w-100 portadaAlbum"
+                            class="btn p-0 w-100 portadaAlbum ratio ratio-1x1"
                             data-bs-toggle="modal"
                             data-bs-target="#modalAlbum"
                             data-album="love-deluxe">
 
-                            <div class="ratio ratio-1x1">
-                                <img src="../img/discografia/discografia-4.png"
-                                    class="object-fit-cover"
-                                    alt="Portada de Love Deluxe">
-                            </div>
+                            <img src="../img/discografia/discografia-4.png"
+                                class="object-fit-cover"
+                                alt="Portada de Love Deluxe">
 
                         </button>
 
                     </div>
 
-
                     <div class="col-12 col-md-6 col-lg-4">
 
                         <button type="button"
-                            class="btn p-0 w-100 portadaAlbum"
+                            class="btn p-0 w-100 portadaAlbum ratio ratio-1x1"
                             data-bs-toggle="modal"
                             data-bs-target="#modalAlbum"
                             data-album="lovers-rock">
 
-                            <div class="ratio ratio-1x1">
-                                <img src="../img/discografia/discografia-5.png"
-                                    class="object-fit-cover"
-                                    alt="Portada de Lovers Rock">
-                            </div>
+                            <img src="../img/discografia/discografia-5.png"
+                                class="object-fit-cover"
+                                alt="Portada de Lovers Rock">
 
                         </button>
 
                     </div>
 
-
                     <div class="col-12 col-md-6 col-lg-4">
 
                         <button type="button"
-                            class="btn p-0 w-100 portadaAlbum"
+                            class="btn p-0 w-100 portadaAlbum ratio ratio-1x1"
                             data-bs-toggle="modal"
                             data-bs-target="#modalAlbum"
                             data-album="soldier-of-love">
 
-                            <div class="ratio ratio-1x1">
-                                <img src="../img/discografia/discografia-6.png"
-                                    class="object-fit-cover"
-                                    alt="Portada de Soldier of Love">
-                            </div>
+                            <img src="../img/discografia/discografia-6.png"
+                                class="object-fit-cover"
+                                alt="Portada de Soldier of Love">
 
                         </button>
 
@@ -279,11 +264,14 @@
 
                 <!-- VENTANA MODAL: INFORMACIÓN DEL ÁLBUM -->
 
-
                 <!--
                 - modal: identifica el componente como una ventana modal.
                 - fade: agrega una transición suave al abrir y cerrar.
-                - id="modalAlbum": es el identificador que usé en data-bs-target para conectar los botones con esta ventana.
+                - id="modalAlbum": es el identificador que usamos en data-bs-target
+                  para conectar los botones con esta ventana.
+                - role="dialog": identifica la ventana como un diálogo.
+                - aria-labelledby: relaciona el modal con su título.
+                - aria-hidden: indica que inicialmente está oculto.
                 - modal-dialog: contiene y organiza la ventana.
                 - modal-dialog-centered: centra la ventana verticalmente.
                 - modal-content: contiene todo lo que se muestra dentro.
@@ -291,10 +279,12 @@
                 - modal-title: identifica el título de la ventana.
                 - btn-close: es el botón de cierre.
                 - data-bs-dismiss="modal": le indica a Bootstrap que debe cerrar la ventana al hacer clic.
-                - modal-body: es el espacio donde vamos a mostrar la información de cada álbum.
+                - modal-body: es el espacio donde mostramos la información de cada álbum.
                 -->
+
                 <div class="modal fade" id="modalAlbum" tabindex="-1"
-                    aria-labelledby="modalAlbumTitulo" aria-hidden="true">
+                    role="dialog" aria-labelledby="modalAlbumTitulo"
+                    aria-hidden="true">
 
                     <div class="modal-dialog modal-dialog-centered">
 
@@ -333,7 +323,7 @@
                 <!-- CANCIONES DESTACADAS -->
 
                 <!-- mb-5: agrega espacio inferior para separar esta sección
-                    de la siguiente. -->
+                de la siguiente. -->
                 <section class="mb-5">
 
                     <h2 class="tituloSeccion">Canciones destacadas por álbum</h2>
@@ -341,7 +331,7 @@
                     <div class="row g-4 mt-2">
 
                         <!-- col-12: ocupa todo el ancho en pantallas pequeñas.
-                            col-md-6: ocupa la mitad del ancho desde pantallas medianas. -->
+                        col-md-6: ocupa la mitad del ancho desde pantallas medianas. -->
                         <div class="col-12 col-md-6">
 
                             <div class="bloqueTexto">
@@ -352,6 +342,7 @@
                                     <li>Hang on to Your Love</li>
                                 </ul>
                             </div>
+
                             <div class="bloqueTexto">
                                 <h3>Promise (1985)</h3>
                                 <ul>
@@ -360,6 +351,7 @@
                                     <li>Never as Good as the First Time</li>
                                 </ul>
                             </div>
+
                             <div class="bloqueTexto">
                                 <h3>Stronger Than Pride (1988)</h3>
                                 <ul>
@@ -368,8 +360,8 @@
                                     <li>Nothing Can Come Between Us</li>
                                 </ul>
                             </div>
-                        </div>
 
+                        </div>
 
                         <div class="col-12 col-md-6">
 
@@ -399,17 +391,17 @@
                                     <li>Babyfather</li>
                                 </ul>
                             </div>
+
                         </div>
 
                     </div>
 
                 </section>
 
-
                 <!-- CIERRE -->
 
                 <!-- mt-5: agrega margen superior para separar el cierre
-                    de la sección anterior. -->
+                de la sección anterior. -->
                 <section class="mt-5 bloqueTexto">
 
                     <h2 class="text-center tituloSeccion">A través del tiempo</h2>
@@ -443,8 +435,9 @@
         </footer>
 
         <!-- Bootstrap JavaScript -->
-       <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
 
-       <script src="../js/galeria.js"></script>
+        <script src="../js/galeria.js"></script>
+
     </body>
 </html>
